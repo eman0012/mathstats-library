@@ -34,9 +34,28 @@ A comprehensive mathematical and statistical operations library for Java, provid
 
 ## Installation
 
-### Using the JAR as a dependency
+### Using GitHub Packages (Recommended)
 
-1. Download the JAR from the [releases page](https://github.com/eman0012/mathstats-library/releases)
+Add to your `pom.xml`:
+
+```xml
+<repositories>
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/eman0012/mathstats-library</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.cst8411</groupId>
+    <artifactId>mathstats-library</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+### Using the JAR directly
+
+1. Download the JAR from [GitHub Packages](https://github.com/eman0012/mathstats-library/packages)
 2. Add it to your project's classpath
 
 ### Building from source
