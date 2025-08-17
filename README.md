@@ -53,6 +53,17 @@ Add to your `pom.xml`:
 </dependency>
 ```
 
+**Note:** GitHub Packages requires authentication. Add to your `~/.m2/settings.xml`:
+```xml
+<servers>
+    <server>
+        <id>github</id>
+        <username>YOUR_GITHUB_USERNAME</username>
+        <password>YOUR_GITHUB_TOKEN</password>
+    </server>
+</servers>
+```
+
 ### Using the JAR directly
 
 1. Download the JAR from [GitHub Packages](https://github.com/eman0012/mathstats-library/packages)
@@ -218,4 +229,6 @@ Institution: Algonquin College
 
 ## Repository
 
-https://github.com/eman0012/mathstats-library
+- **GitHub Repository:** https://github.com/eman0012/mathstats-library
+- **GitHub Packages:** https://github.com/eman0012/mathstats-library/packages
+- **Package Registry:** `maven.pkg.github.com/eman0012/mathstats-library`
