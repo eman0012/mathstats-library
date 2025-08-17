@@ -53,7 +53,9 @@ Add to your `pom.xml`:
 </dependency>
 ```
 
-**Note:** GitHub Packages requires authentication. Add to your `~/.m2/settings.xml`:
+**Note:** To use this package as a Maven dependency from GitHub Packages, authentication is required. For testing without authentication, please clone and build from source (see below) or download the JAR directly from the [Packages page](https://github.com/eman0012/mathstats-library/packages).
+
+If you need to use it as a Maven dependency, add to your `~/.m2/settings.xml`:
 ```xml
 <servers>
     <server>
@@ -64,12 +66,9 @@ Add to your `pom.xml`:
 </servers>
 ```
 
-### Using the JAR directly
+### Building from source (Recommended for Testing)
 
-1. Download the JAR from [GitHub Packages](https://github.com/eman0012/mathstats-library/packages)
-2. Add it to your project's classpath
-
-### Building from source
+**No authentication required!** Simply:
 
 ```bash
 git clone https://github.com/eman0012/mathstats-library.git
@@ -82,6 +81,11 @@ This will create the following JARs in the `target` directory:
 - `mathstats-library-1.0.0-jar-with-dependencies.jar` - Executable JAR with demo
 - `mathstats-library-1.0.0-javadoc.jar` - JavaDoc documentation
 - `mathstats-library-1.0.0-sources.jar` - Source code
+
+### Using the JAR directly
+
+1. Download the JAR from [GitHub Packages](https://github.com/eman0012/mathstats-library/packages) (no login required for download)
+2. Add it to your project's classpath
 
 ## Usage
 
@@ -222,8 +226,7 @@ This project is part of academic coursework for CST8411 at Algonquin College.
 
 ## Author
 
-**Corneile Emanuel**  
-Student ID: 041154912  
+**Corneile Emanuel**   
 Course: CST8411 - Information Systems Development and Deployment  
 Institution: Algonquin College
 
